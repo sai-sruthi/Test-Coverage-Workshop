@@ -45,11 +45,11 @@ I joined the us-east-1 channel at 2:00 pm on Tuesday(03/09/2021) and discussed a
 
 6. How can an acceptance test be automated while still allowing human review?
 
-  Acceptance test be autamated while still allowing human review, like if we have screenshot testing and we can compare them, use semantic UI diffs to compare irrespective of device etc. 
+   Acceptance test be autamated while still allowing human review, like if we have screenshot testing and we can compare them, use semantic UI diffs to compare irrespective of device etc. 
 
 7. Why might the failure rate of a test be useful to know when analyzing a test suite?
 
-  The failure rate of a test be useful to know when analyzing a test suite, to know the effectiveness, and quality of the test suite. Detect falky tests, in the suite etc. 
+   The failure rate of a test be useful to know when analyzing a test suite, to know the effectiveness, and quality of the test suite. Detect falky tests, in the suite etc. 
 
 8. What's the highest level of flakyness a test can achieve and why? Hint: Think what behavior are purely random decision would be?
 
@@ -57,17 +57,27 @@ I joined the us-east-1 channel at 2:00 pm on Tuesday(03/09/2021) and discussed a
 
 9. What is the difference between generative and mutation-based fuzzing techniques?
 
-   
+  The difference between generative and mutation-based fuzzing techniques is that in generative, the test input is randomly created, whereas in mutation based it is randomly modified. Generative approach is commenly used for security testing. 
 
 10. Why might minification of fuzzing inputs be useful for debugging an fault?
 
+   Minification of fuzzing inputs is useful as it makes revealing faults easier. The long input that can be removed and producing a small input which still causes fault makes it is easier to debug the fault. 
+
 11. Why regex isn't enough for performing static analysis?
+
+   Regex isn't enough for performing static analysis as while we can detect one message chain, we miss one, and falsely detect another. We continously go on increasing the tests and conditions which are only going to create other problems. 
 
 12. When implementing a code smell detector, how might you detect duplicated code?
 
+
+
 13. Why is an visitor pattern using technique for writing static analysis based code checks?
 
+   The visitor design pattern is a way of separating an algorithm from an object structure on which it operates, hence it uses a static analysis based code checks. A practical result of this separation is the ability to add new operations to existing object structures without modifying the structures. It is one way to follow the open/closed principle.
+
 14. How might advanced analysis techniques such as statistical analysis or automated program repair impact the design and usage of an automated software pipeline?
+
+
 
 
 ### Coverage Calculation 
