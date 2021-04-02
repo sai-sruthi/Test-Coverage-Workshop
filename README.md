@@ -8,12 +8,24 @@
 
 Describe your discussion for testing.
 
+
+![ClassDiscussion](https://media.github.ncsu.edu/user/16063/files/ae361480-933d-11eb-9a2a-8856c290a82d)
+
+I joined the us-east-1 channel at 2:00 pm on Tuesday(03/09/2021) and discussed about the below topics.
+
 1. What are some tradeoffs in having lots of unit tests and/or UI/integration tests in a CI pipeline?
+
+   Finding errors in modules is easy. Maintenance of unit test is cheap. It pays attention to the behavior of single modules
+
 2. What are some reasons why 100% test coverage (i.e. statement coverage), might be difficult, impossible, impractical, or even counter-productive to achieve in practice.
+
+   Even if it were possible, it’s likely to be so labor-intensive that you’d get more value from your software development efforts elsewhere. Even if you attained 100% coverage, it doesn’t mean that the software actually works. Maybe you attained 100% line coverage but missed a branch. Coverage can’t tell you about code that doesn’t exist but should. Making 100% code coverage the target can encourage counterproductive behaviors. Maybe you warp the code to facilitate testing (“test-induced design damage”). 
 
 ### Conceptual Questions
 
 1. What are the two different senses of testing and how do they differ?
+
+
 
 2. What is the goal of code coverage?
 
@@ -48,33 +60,36 @@ Calculate the branch coverage of the following test suite:
    - demo(1,1,1);
    - demo(0,0,0);
 
-```js
-function demo(a,b,c) {
-   if( c && b ) { c = b * b; }
-   else if( a )
-   {
-      if( b )
-      {
-         if( c )
-         {
-            console.log( a + b + c );
-         }
-      }
-   }
+The coverage for the above test suite is: 
 
-   if( a || b || c )
-   {
-      return 0;
-   }
-   return 1;
-}
-```
+1. Statement Coverage - 7/10 (70%)
+2. Branch Coverage - 10/15 (66.67%)
+3. Functions - 1/1 (100%)
 
 
 ### Workshops
 
 * Document completing the Coverage workshop.
+
+Please find below the images depicting the completion of Coverage Workshop: 
+
+![CoverageWorkshop](https://media.github.ncsu.edu/user/16063/files/aeceab00-933d-11eb-939c-a13cd413dee4)
+
+![CoverageWorkshop2](https://media.github.ncsu.edu/user/16063/files/b42bf580-933d-11eb-9a26-f7a131ba4a76)
+
 * Document completing any two of the following workshops. 
+
+Please find below the images depicting the completion of the Workshops: 
    - Test Suites
+
+   ![TestSuites](https://media.github.ncsu.edu/user/16063/files/b55d2280-933d-11eb-9644-a5e44aacb96a)
+
+   ![TestSuites2](https://media.github.ncsu.edu/user/16063/files/b5f5b900-933d-11eb-8342-783301a9df88)
+
+   ![TestSuites3](https://media.github.ncsu.edu/user/16063/files/b68e4f80-933d-11eb-9407-a2fbf7820147)   
+
    - Fuzzing
+
+   ![Fuzzing](https://media.github.ncsu.edu/user/16063/files/b7bf7c80-933d-11eb-88a3-8d1dee6b6ee4)
+
 
