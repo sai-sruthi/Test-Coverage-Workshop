@@ -25,23 +25,39 @@ I joined the us-east-1 channel at 2:00 pm on Tuesday(03/09/2021) and discussed a
 
 1. What are the two different senses of testing and how do they differ?
 
-
+   The two different senses of testing are Unit Testing and Integration Testing. The difference is in unit testing individual components are tested, with a goal to confirm that the component or subsystem is correctly coded and carries out the intended functionality, whereas in integration it is testing the interfaces among the subsystems. 
 
 2. What is the goal of code coverage?
 
+   The goal of the code coverage is to measure the property where increasing the amount of possible code run, we are decreasing the chances of having a fault. 
+
 3. Does condition coverage imply branch coverage? Why not?
+
+   No, condition coverage does not imply branch coverage, because we can achieve condition coverage, but may not cover all branches. 
 
 4. Why might be data-flow coverage be a more effective criteria for testing than achieving path coverage?
 
+   It might be sometime impossible to cover 100% in path coverage, like in case of a while loop, but in case data-flow coverage, we cover tha paths that recieve a value, or def-uses changes. 
+
 5. What is the primary limitation of mutation coverage?
+
+   The limitaions of mutation coverage are that Complex mutations are difficult to implement. Mutation testing is time-consuming and expensive. Testers need to have the programming knowledge to do mutation testing. Mutation testing is not applicable for black-box testing as involves a lot of source code changes.   
 
 6. How can an acceptance test be automated while still allowing human review?
 
+  Acceptance test be autamated while still allowing human review, like if we have screenshot testing and we can compare them, use semantic UI diffs to compare irrespective of device etc. 
+
 7. Why might the failure rate of a test be useful to know when analyzing a test suite?
+
+  The failure rate of a test be useful to know when analyzing a test suite, to know the effectiveness, and quality of the test suite. Detect falky tests, in the suite etc. 
 
 8. What's the highest level of flakyness a test can achieve and why? Hint: Think what behavior are purely random decision would be?
 
+   The highest level of flakyness a test can achieve is 50%, as if the tests pases and fails at equal rates, it has a purely random decision. The formula calculates the minimum of passing or failing, and hence at both equal rates it will be the highest. 
+
 9. What is the difference between generative and mutation-based fuzzing techniques?
+
+   
 
 10. Why might minification of fuzzing inputs be useful for debugging an fault?
 
