@@ -69,6 +69,7 @@ I joined the us-east-1 channel at 2:00 pm on Tuesday(03/09/2021) and discussed a
 
 12. When implementing a code smell detector, how might you detect duplicated code?
 
+   We can detect use clone detectors if we havng a repeasted lines of code in the application. 
 
 
 13. Why is an visitor pattern using technique for writing static analysis based code checks?
@@ -77,7 +78,7 @@ I joined the us-east-1 channel at 2:00 pm on Tuesday(03/09/2021) and discussed a
 
 14. How might advanced analysis techniques such as statistical analysis or automated program repair impact the design and usage of an automated software pipeline?
 
-
+   Advanced analysis techniques such as statistical analysis or automated program repair impact the design and usage of an automated software pipeline by helping validate properties of code, such as code smells, suspiciousness of line location etc. 
 
 
 ### Coverage Calculation 
